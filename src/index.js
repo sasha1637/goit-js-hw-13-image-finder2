@@ -45,7 +45,7 @@ const onOpenModal = e => {
   if (e.target.nodeName !== 'IMG') {
       return;
   }
-    const imageInstance = basicLightbox.create(`<img src="${e.target.currentSrc}" alt="" />`);
+    const imageInstance = basicLightbox.create(`<img src="${e.target.currentSrc}" alt="" width="1400" height="900"/>`);
   imageInstance.show();
 }
 refs.galleryList.addEventListener('click', onOpenModal);
